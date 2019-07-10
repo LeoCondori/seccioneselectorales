@@ -1,4 +1,4 @@
-# Bienvenido to API Secciones electorales!
+# Bienvenido  API Secciones electorales!
 En la siguiente documentación aprenderás a consumir esta API con el objetivo de recuperar la **sección electoral** a partir de la **localidad**.
 
 
@@ -30,4 +30,37 @@ Ahora es posible utilizar la API **seccion_predictor** para conocer la sección 
 
 # Respuestas
 
-Todas las respuestas tendrán como respuesta un objeto JSON.
+Todas las respuestas serán un objeto JSON.
+
+## Secciones electorales
+[{
+	    "id": "1",
+	    "descripcion": "Primera Seccion electoral",
+	    "fec_ult_act": "2019-07-09 21:25:25"
+ },...]
+
+## Partidos
+  [{
+    "ID": "1",
+    "descripcion": "Campana",
+    "fk_seccion_electoral": "1",
+    "fec_ult_act": "2019-07-09 21:27:57"
+  },...]
+  
+## Localidades
+[{
+    "ID": "1",
+    "descripcion": "Campana",
+    "fk_partidos": "1",
+    "fec_ult_act": "2019-07-09 21:31:26"
+  },...]
+## Seccion Predictor
+[
+  {
+    "PARTIDO": "Lomas de Zamora",
+    "LOCALIDAD": "Ingeniero Budge",
+    "SECCION_ELECTORAL": "Tercera Sección electoral"
+  }
+]
+
+## Por: Leo Condorí
